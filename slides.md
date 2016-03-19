@@ -259,19 +259,19 @@ add7And3(2)
 
 ```js
 const collection =
-  [0, 1, 2]
+  [0, 1, 2, 3]
 
 R.join(" ^_^ ", collection)
-//=> 0 ^_^ 1 ^_^ 2
+//=> 0 ^_^ 1 ^_^ 2 ^_^ 3
 
 R.join(" ^_^ ")(collection)
-//=> 0 ^_^ 1 ^_^ 2
+//=> 0 ^_^ 1 ^_^ 2 ^_^ 3
 
-const joinWithAnimeSmile =
-  R.join(" ^_^ ")
+const joinWithLobster =
+  R.join(" (V)!_!(V) ")
 
 joinWithAnimeSmile(collection)
-//=> 0 ^_^ 1 ^_^ 2
+//=> 0 (V)!_!(V) 1 (V)!_!(V) 2 (V)!_!(V) 3
 ```
 
 
