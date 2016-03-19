@@ -335,7 +335,10 @@ const removeYoungerThan = pipe(  // String
 )
 
 removeYoungerThan("Tina")
-//=> {name: "Tina", age: 13}
+//=> [{name: "Tina", age: 13}]
+
+removeYoungerThan("Gene")
+//=> [{name: "Tina", age: 13}, {name: "Gene", age: 11}]
 ```
 
 
