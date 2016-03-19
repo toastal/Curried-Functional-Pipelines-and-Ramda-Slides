@@ -348,7 +348,7 @@ removeYoungerThan("Gene")
 # Advantages of Pipelines + Currying
 
 - Declarative
-- Consise
+- Concise
 - No Possible Side Effects
 - Testable
 
