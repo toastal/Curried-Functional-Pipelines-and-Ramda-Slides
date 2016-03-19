@@ -51,7 +51,7 @@ function objToQueryStr(obj) {
 
 # `slice(0, 1)`... Really?
 
-And why are we mutation `param`?
+And why are we mutating `param`?
 
 
 * * *
