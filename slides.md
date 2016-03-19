@@ -61,7 +61,7 @@ And why are we mutation `param`?
 
 ```js
 const objToQueryStr = (obj) =>
-  _.map(_.pairs(obj), (a) => a.join("=")).join("=")
+  _.join(_.map(_.pairs(obj), (a) => _.join(a , "=")), "=")
 ```
 
 
