@@ -83,7 +83,7 @@ const objToQueryStr = (obj) =>
 * * *
 
 
-# Problems with JS and these intermediaty functions
+# Problems with JS and these intermediary functions
 
 ```js
 const objToQueryStr = (obj) => {
