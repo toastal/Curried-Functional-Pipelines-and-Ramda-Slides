@@ -170,7 +170,11 @@ let foo = f << g
 # ECMAScript 2015
 
 ```js
-const compose = f => g => (...xs) => f(g(...xs))
+const compose = (...fns) => 
+  (initial) => fns.reduceRight(
+    (result, fn) => fn(result),
+    initial
+  );
 
 const foo = compose(f, g)
 ```
