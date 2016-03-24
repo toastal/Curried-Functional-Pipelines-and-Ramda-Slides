@@ -6,7 +6,7 @@ Kyle J. Kress - @toastal
 * * *
 
 
-I work at Entangled Media in Boulder, CO building a media application with Electron, React, Redux, Babel, & Ramda
+I work at Entangled Media in Boulder, CO building a media application with Electron, React, Redux, Babel, & now Ramda
 
 My degree is in art - so obviously I'm someone you can trust.
 
