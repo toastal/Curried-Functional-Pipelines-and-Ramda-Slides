@@ -263,6 +263,15 @@ add7And3(2)
 
 ![math functions!](http://www.math-only-math.com/images/436xNxmath-practice-test-on-function.jpg.pagespeed.ic.uohck83wf2.jpg)
 
+Functions take *one thing* and return *one thing*--a lot of times that one thing is a function.
+
+- - -
+
+
+# And This is How Composition Looks
+
+![math composition](http://image.tutorvista.com/cms/images/38/composition-of-functions-examples.JPG)
+
 
 * * *
 
