@@ -311,7 +311,7 @@ const objToQueryStr = pipe(  // {k: v}
 * * *
 
 
-# Complicated Fun with Placeholders
+# Fun with Pipe and Placeholders
 
 ```js
 const {__, find, flip, lt, pipe, prop, propEq, propOr, propSatisfies, reject} = R
