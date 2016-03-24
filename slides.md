@@ -352,3 +352,21 @@ removeYoungerThan("Gene")
 - No Possible Side Effects
 - Testable
 
+
+- - -
+
+
+# Disadvantages
+
+- Can be hard to follow (pointless programming)
+- Requires a library or a lot of boilerplate
+
+
+- - -
+
+
+# Alternatives
+
+- lodash-fp :(
+- mori :)
+- Elm / PureScript :D
