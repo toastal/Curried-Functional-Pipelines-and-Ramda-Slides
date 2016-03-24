@@ -261,7 +261,7 @@ add7And3(2)
 
 # Why is this simpler?
 
-![http://www.math-only-math.com/images/436xNxmath-practice-test-on-function.jpg.pagespeed.ic.uohck83wf2.jpg](math functions!)
+![math functions!](http://www.math-only-math.com/images/436xNxmath-practice-test-on-function.jpg.pagespeed.ic.uohck83wf2.jpg)
 
 
 * * *
