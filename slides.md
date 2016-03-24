@@ -288,7 +288,7 @@ const objToQueryStr =
 // to Ramda
 // objToQueryStr : {k: v} -> String
 const objToQueryStr =
-  R.compose(R.join("&"), R.map(R.join("="), R.toPairs)
+  R.compose(R.join("&"), R.map(R.join("=")), R.toPairs)
 ```
 
 
