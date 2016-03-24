@@ -270,7 +270,7 @@ R.join(" ^_^ ")(collection)
 const joinWithLobster =
   R.join(" (V)!_!(V) ")
 
-joinWithAnimeSmile(collection)
+joinWithLobster(collection)
 //=> 0 (V)!_!(V) 1 (V)!_!(V) 2 (V)!_!(V) 3
 ```
 
