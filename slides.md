@@ -412,6 +412,7 @@ removeYoungerThan("Gene")
 
 - Declarative
 - Concise
+- Not locked into a Object's prototype
 - Cuts down on attempted side effects
 - Testable
 
