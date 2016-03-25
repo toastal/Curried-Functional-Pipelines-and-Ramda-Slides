@@ -329,6 +329,22 @@ const objToQueryStr = pipe(  // {k: v}
 ```
 
 
+- - -
+
+
+# Remember the Viking Code From Earlier?
+
+```js
+function objToQueryStr(obj) {
+  var param = "";
+  _.forEach(obj, function(val, key) {
+      param += key + "=" + val + "&";
+   });
+  return param.slice(0, -1);
+}
+```
+
+
 * * *
 
 
