@@ -100,6 +100,14 @@ const objToQueryStr = (obj) => {
 ```
 
 
+- - -
+
+
+# Moreover you're tied to `_()`
+
+They're not static functions. You must call `.value()` to use what's inside and sometimes even in the chains you'll have to call `.value()` because the query expression or transducer needs to be evaluated to be continue.
+
+
 * * *
 
 
