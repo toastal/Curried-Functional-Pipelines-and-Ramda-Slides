@@ -330,6 +330,9 @@ const objToQueryStr = pipe(  // {k: v}
 // Or to be concise
 const objToQueryStr_ =
   pipe(toPairs, map(join("=")), join("&"))
+  
+objToQueryStr(obj)
+//=> "foo=bar&baz=true&qux=3.1415"
 ```
 
 
