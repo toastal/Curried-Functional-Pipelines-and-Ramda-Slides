@@ -40,8 +40,8 @@ objToQueryStr(obj)
 ```js
 function objToQueryStr(obj) {
   var param = "";
-  _.forEach(obj, function(val, key) {
-      param += key + "=" + val + "&";
+  _.forEach(obj, function(value, key) {
+      param += key + "=" + value + "&";
    });
   return param.slice(0, -1);
 }
@@ -59,11 +59,11 @@ And why are we mutating `param`?
 * * *
 
 
-# lodash:
+# Lodash:
 
 ```js
 const objToQueryStr = (obj) =>
-  _.join(_.map(_.pairs(obj), (a) => _.join(a , "=")), "=")
+  _.join(_.map(_.pairs(obj), (kvs) => _.join(kvs , "=")), "=")
 ```
 
 
@@ -76,7 +76,7 @@ const objToQueryStr = (obj) =>
 const objToQueryStr = (obj) =>
    _.chain(obj)
      .pairs()
-     .map((a) => a.join("="))
+     .map((kvs) => kvs.join("="))
      .join("&")
      .value()
 ```
@@ -92,9 +92,9 @@ const objToQueryStr = (obj) => {
    killAllKittens();  // :(
    return _.chain(obj)
      .pairs()
-     .map((a) => { 
+     .map((kvs) => { 
         call("mom");  // :(
-        return a.join("=") 
+        return kvs.join("=") 
       })
      .join("&")
      .value()
@@ -364,7 +364,7 @@ function objToQueryStr(obj) {
 
 // Lodash chains for days
 const objToQueryStr_ = (obj) =>
-  _.chain(obj).pairs().map((a) => a.join("=")).join("&").value()
+  _.chain(obj).pairs().map((kvs) => kvs.join("=")).join("&").value()
    
 
 // Totally Ramdical dude
