@@ -219,13 +219,13 @@ const objToQueryStr =
 
 ```js
 // Not Curried
-// add : (Number, Number) -> Number
-const add = (a, b) => 
+// notCurriedAdd : (Number, Number) -> Number
+const notCurriedAdd = (a, b) => 
   a + b
 
 // Curried
-// add_ : Number -> Number -> Number
-const add_ = (a) =>
+// add : Number -> Number -> Number
+const add = (a) =>
   (b) =>
     a + b
 
