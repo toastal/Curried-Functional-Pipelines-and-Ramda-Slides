@@ -339,6 +339,7 @@ const objToQueryStr_ =
 # Remember the Viking Code From Earlier?
 
 ```js
+// Long live Odin
 function objToQueryStr(obj) {
   var param = "";
   _.forEach(obj, function(val, key) {
@@ -346,6 +347,15 @@ function objToQueryStr(obj) {
    });
   return param.slice(0, -1);
 }
+
+// Lodash chains for days
+const objToQueryStr_ = (obj) =>
+  _.chain(obj).pairs().map((a) => a.join("=")).join("&").value()
+   
+
+// Totally Ramdical dude
+const objToQueryStr__ =
+  pipe(toPairs, map(join("=")), join("&"))
 ```
 
 
