@@ -214,8 +214,8 @@ const add = (a, b) =>
   a + b
 
 // Curried
-// add : Number -> Number -> Number
-const add = (a) =>
+// add_ : Number -> Number -> Number
+const add_ = (a) =>
   (b) =>
     a + b
 
@@ -307,8 +307,8 @@ const objToQueryStr =
   _.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, "=")), _.pairs)
   
 // to Ramda
-// objToQueryStr : {k: v} -> String
-const objToQueryStr =
+// objToQueryStr_ : {k: v} -> String
+const objToQueryStr_ =
   R.compose(R.join("&"), R.map(R.join("=")), R.toPairs)
 ```
 
@@ -326,6 +326,10 @@ const objToQueryStr = pipe(  // {k: v}
   map(join("=")),            // |> [String]
   join("&")                  // |> String
 )
+
+// Or to be concise
+const objToQueryStr_ =
+  pipe(toPairs, map(join("=")), join("&"))
 ```
 
 
