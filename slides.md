@@ -370,7 +370,7 @@ removeYoungerThan("Gene")
 
 - Declarative
 - Concise
-- No Possible Side Effects
+- Cuts down on attempted side effects
 - Testable
 
 
