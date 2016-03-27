@@ -1,4 +1,4 @@
-# Curried Function Pipelines & Ramda
+# Curried Functional Pipelines & Ramda
 
 ![Ramda logo is laughably ugly--kinda like Iceweasel](http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png)
 
