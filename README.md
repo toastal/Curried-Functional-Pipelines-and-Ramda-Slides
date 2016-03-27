@@ -63,7 +63,7 @@ And why are we mutating `param`?
 
 ```js
 const objToQueryStr = (obj) =>
-  _.join(_.map(_.pairs(obj), (kvs) => _.join(kvs , "=")), "=")
+  _.join(_.map(_.pairs(obj), (kvs) => _.join(kvs, "=")), "=")
 ```
 
 
