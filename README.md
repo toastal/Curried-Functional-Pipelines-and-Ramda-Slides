@@ -334,7 +334,7 @@ const {join, map, pipe, toPairs} = R
 const objToQueryStr = pipe(  // {k: v}
   toPairs,                   // |> [[k, v]]
   map(join("=")),            // |> [String]
-  join("&")                  // |> String
+  join("&")                  // -> String
 )
 
 // Or to be concise
@@ -396,7 +396,7 @@ const removeYoungerThan = pipe(  // String
   propOr(0, "age"),              // |> Int
   flip(lt),                      // |> (Int -> Bool)
   propSatisfies(__, "age"),      // |> (Child -> Bool)
-  reject(__, belcherChildren)    // |> [Child]
+  reject(__, belcherChildren)    // -> [Child]
 )
 
 removeYoungerThan("Tina")
@@ -410,10 +410,40 @@ removeYoungerThan("Gene")
 * * *
 
 
+# Associativity means we can can build more pipelines
+
+```js
+const {__, find, flip, lt, pipe, prop, propEq, propOr, propSatisfies, reject} = R
+
+const getBelcherChildByName = pipe(  // String
+  propEq("name"),                    // |> (Child -> Bool)
+  find(__, belcherChildren)          // -> Child | undefined
+)
+
+const isAgeLessThan = pipe(          // Child | undefined
+  propOr(0, "age"),                  // |> Int
+  flip(lt),                          // -> (Int -> Bool)
+)
+
+const removeYoungerThan = pipe(      // String
+  getBelcherChildByName,             // |> Child | undefined
+  isAgeLessThan,                     // |> (Int -> Bool)
+  reject(__, belcherChildren)        // -> [Child]
+)
+
+removeYoungerThan("Tina")
+//=> [{name: "Tina", age: 13}]
+```
+
+
+* * *
+
+
 # Advantages of Pipelines + Currying
 
 - Declarative
 - Concise
+- LEGOize your code
 - Not locked into a Object's prototype
 - Cuts down on attempted side effects
 - Testable
