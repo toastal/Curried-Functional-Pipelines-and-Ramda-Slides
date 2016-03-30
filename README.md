@@ -482,9 +482,19 @@ removeYoungerThan("Tina")  //=> [{name: "Tina", age: 13}]
 - [Elm](http://elm-lang.org/) / [PureScript](http://www.purescript.org/) :D
 
 
+- - -
+
+
+## Learn More (For Great Good)
+
+- [Hey Underscore, You're Doing It Wrong (video)](https://www.youtube.com/watch?v=m3svKOdZijA)
+- [Practical Functional Programming: Pick Two (video)](https://www.youtube.com/watch?v=XcS-LdEBUkE)
+- [Elm Architecture Tutorial](https://github.com/evancz/elm-architecture-tutorial/)
+
+
 * * *
 
 
 # Thank You
 
-Look me up `@toastal`
+Look me up `@toastal` or whatever.
