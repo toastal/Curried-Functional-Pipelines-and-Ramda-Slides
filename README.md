@@ -182,12 +182,13 @@ let foo = f << g
 
 # ECMAScript 2015
 
-  ```js
-  const compose = (...fns) =>
-  (initial) => fns.reduceRight(
+```js
+const compose = (...fns) =>
+  (initial) => 
+    fns.reduceRight(
       (result, fn) => fn(result),
       initial
-      );
+    )
 
 const foo = compose(f, g)
 ```
