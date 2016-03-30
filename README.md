@@ -180,7 +180,7 @@ let foo = f << g
 - - -
 
 
-# ECMAScript 2015
+## ECMAScript 2015
 
 ```js
 const compose = (...fns) =>
@@ -210,7 +210,7 @@ _.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, 
 * * *
 
 
-# Currying
+## Currying
 
 "Currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument."
 
@@ -218,7 +218,7 @@ _.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, 
 - - -
 
 
-# Simplified
+## Simplified
 
 
 ```js
