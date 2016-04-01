@@ -245,6 +245,7 @@ const add3Things = (a) => (b) => (c) => a + b + c
 ## What's this let you do?
 
 ```js
+// add7 : Number -> Number
 const add7 = 
   add(7)
 
