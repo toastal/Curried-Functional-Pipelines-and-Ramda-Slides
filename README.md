@@ -43,7 +43,7 @@ function objToQueryStr(obj) {
   var param = "";
   _.forEach(obj, function(value, key) {
       param += key + "=" + value + "&";
-   });
+  });
   return param.slice(0, -1);
 }
 ```
