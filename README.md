@@ -1,7 +1,7 @@
 ## Curried Functional
 ## Pipelines & Ramda
 
-[![Ramda logo is laughably ugly--kinda like Iceweasel](http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png)](http://ramdajs.com/)
+[![Ramda logo is laughably ugly—kinda like Iceweasel](http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png)](http://ramdajs.com/)
 
 Kyle J. Kress - @toastal
 
@@ -11,7 +11,7 @@ Kyle J. Kress - @toastal
 
 I work at Entangled Media in Boulder, CO building a media application with Electron, React, Redux, Babel, & now Ramda.
 
-My degree is in art - so obviously I'm someone you can trust.
+My degree is in art – so obviously I’m someone you can trust.
 
 Nothing special here: https://toast.al/
 
@@ -117,7 +117,7 @@ Well, we should test all of these functions because JavaScript allows side-effec
 
 ## Moreover you're tied to `_()`
 
-They're not static functions. You must call `.value()` to use what's inside and sometimes even in the chains you'll have to call `.value()` because the query expression or transducer needs to be evaluated to be continue. You can't just use these functions on normal data because you're required to be in that object prototype.
+They’re not static functions. You must call `.value()` to use what’s inside and sometimes even in the chains you’ll have to call `.value()` because the query expression or transducer needs to be evaluated to be continue. You can’t just use these functions on normal data because you’re required to be in that object prototype.
 
 
 * * *
@@ -125,7 +125,7 @@ They're not static functions. You must call `.value()` to use what's inside and 
 
 ## Or we could write it in a point-free matter.
 
-"...function definitions do not identify the arguments (or "points") on which they operate"
+"...function definitions do not identify the arguments (or “points”) on which they operate"
 
 
 * * *
@@ -204,7 +204,7 @@ const objToQueryStr =
   _.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, "=")), _.toPairs)
 ```
 
-#### Oh that's no good... It seems our argument order is posing a problem.
+Oh that’s no good… It seems our argument order is posing a problem.
 
 
 * * *
@@ -242,7 +242,7 @@ const add3Things = (a) => (b) => (c) => a + b + c
 - - -
 
 
-## What's this let you do?
+## What’s this let you do?
 
 ```js
 // add7 : Number -> Number
@@ -272,7 +272,7 @@ add7And3(2)
 //=> 12
 ```
 
-It's pretty ugly ...imagine if we didn't have to do this step.
+It’s pretty ugly …imagine if we didn't have to do this step.
 
 
 * * *
@@ -295,7 +295,7 @@ Functions take *one thing* and return *one thing*--a lot of times that one thing
 * * *
 
 
-## Enter Ramda - Curried and Collection Comes Last
+## Enter Ramda – Curried and Collection Comes Last
 
 ```js
 const collection =
@@ -335,7 +335,7 @@ const objToQueryStr_ =
 - - -
 
 
-## We can pipe too... because we don't read Hebrew
+## We can pipe too… because we don’t read Hebrew
 
 ```js
 const {join, map, pipe, toPairs} = R
@@ -464,7 +464,7 @@ removeYoungerThan("Tina")  //=> [{name: "Tina", age: 13}]
 - Declarative
 - Concise
 - LEGOize your code
-- Not locked into a Object's prototype
+- Not locked into a Object’s prototype
 - Cuts down on attempted side effects
 - Testable
 
@@ -494,7 +494,7 @@ removeYoungerThan("Tina")  //=> [{name: "Tina", age: 13}]
 
 ## Learn More (For Great Good)
 
-- [Hey Underscore, You're Doing It Wrong (video)](https://www.youtube.com/watch?v=m3svKOdZijA)
+- [Hey Underscore, You’re Doing It Wrong (video)](https://www.youtube.com/watch?v=m3svKOdZijA)
 - [Practical Functional Programming: Pick Two (video)](https://www.youtube.com/watch?v=XcS-LdEBUkE)
 - [Elm Architecture Tutorial](https://github.com/evancz/elm-architecture-tutorial/)
 
