@@ -64,7 +64,7 @@ And why are we mutating `param`?
 
 ```js
 const objToQueryStr = (obj) =>
-  _.join(_.map(_.pairs(obj), (kvs) => _.join(kvs, "=")), "=")
+  _.join(_.map(_.toPairs(obj), (kvs) => _.join(kvs, "=")), "=")
 ```
 
 
@@ -76,7 +76,7 @@ const objToQueryStr = (obj) =>
 ```js
 const objToQueryStr = (obj) =>
    _.chain(obj)
-     .pairs()
+     .toPairs()
      .map((kvs) => kvs.join("="))
      .join("&")
      .value()
@@ -201,7 +201,7 @@ const foo = compose(f, g)
 
 ```js
 const objToQueryStr =
-_.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, "=")), _.pairs)
+_.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, "=")), _.toPairs)
 ```
 
 #### Oh that's no good...
@@ -323,7 +323,7 @@ joinWithLobster(collection)
 ```js
 // compare lodash
 const objToQueryStr =
-  _.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, "=")), _.pairs)
+  _.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, "=")), _.toPairs)
 
 // to Ramda
 // objToQueryStr_ : {k: v} -> String
@@ -372,7 +372,7 @@ function objToQueryStr(obj) {
 
 // Lodash chains for days
 const objToQueryStr_ = (obj) =>
-  _.chain(obj).pairs().map((kvs) => kvs.join("=")).join("&").value()
+  _.chain(obj).toPairs().map((kvs) => kvs.join("=")).join("&").value()
 
 // Totally Ramdical dude
 const objToQueryStr__ =
