@@ -484,7 +484,7 @@ removeYoungerThan("Tina")  //=> [{name: "Tina", age: 13}]
 ## Alternatives
 
 - [lodash-fp](https://github.com/lodash/lodash/wiki/FP-Guide) :(
-- [Ramtuary](https://github.com/davidchase/ramtuary) :)
+- [Ramtuary (Ramda + Ramda Fantasy + Sanctuary)](https://github.com/davidchase/ramtuary) :)
 - [mori](https://swannodette.github.io/mori/) :D
 - [Elm](http://elm-lang.org/) / [PureScript](http://www.purescript.org/) XD
 
