@@ -71,7 +71,7 @@ const objToQueryStr = (obj) =>
 - - -
 
 
-## lodash Attempt #2:
+## Lodash Attempt #2:
 
 ```js
 const objToQueryStr = (obj) =>
