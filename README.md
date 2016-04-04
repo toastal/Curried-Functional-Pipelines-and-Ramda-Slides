@@ -366,7 +366,7 @@ function objToQueryStr(obj) {
   var param = "";
   _.forEach(obj, function(val, key) {
       param += key + "=" + val + "&";
-   });
+  });
   return param.slice(0, -1);
 }
 
