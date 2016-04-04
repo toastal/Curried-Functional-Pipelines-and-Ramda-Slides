@@ -204,7 +204,7 @@ const objToQueryStr =
   _.flowRight(_.partial(_.join, _, "&"), _.partial(_.map, _, _.partial(_.join, _, "=")), _.toPairs)
 ```
 
-#### Oh that's no good...
+#### Oh that's no good... It seems our argument order is posing a problem.
 
 
 * * *
