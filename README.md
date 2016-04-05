@@ -184,7 +184,7 @@ let foo = f << g
 
 ```js
 const compose = (...fns) =>
-  (initial) => 
+  (initial) =>
     fns.reduceRight(
       (result, fn) => fn(result),
       initial
@@ -246,7 +246,7 @@ const add3Things = (a) => (b) => (c) => a + b + c
 
 ```js
 // add7 : Number -> Number
-const add7 = 
+const add7 =
   add(7)
 
 add7(3)
@@ -504,4 +504,4 @@ removeYoungerThan("Tina")  //=> [{name: "Tina", age: 13}]
 
 # Thank You
 
-Look me up `@toastal` or whatever.
+Let’s be friends `@toastal`.
