@@ -3,7 +3,7 @@
 
 [![Ramda logo is laughably ugly—kinda like Iceweasel](http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png)](http://ramdajs.com/)
 
-Kyle J. Kress - @toastal
+@toastal
 
 
 * * *
